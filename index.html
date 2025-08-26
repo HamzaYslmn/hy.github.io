@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="tr" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hamza Yeşilmen — Mechatronic & R&D</title>
+  <meta name="description" content="Hamza Yeşilmen | Mechatronic / R&D Engineer. Gömülü sistemler, yapay zeka, IoT ve yazılım projeleri." />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Hamza Yeşilmen — Mechatronic & R&D" />
+  <meta property="og:description" content="Gömülü sistemler, yapay zeka, IoT ve yazılım projeleri." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="avatar.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' viewBox='0 0 128 128'%3E%3Crect width='100%25' height='100%25' rx='24' fill='%23000000'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='64' fill='white'%3EH%3C/text%3E%3C/svg%3E" />
+
+  <style>
+    :root{
+      --bg: #0b0c10;
+      --card:#121318;
+      --txt:#e6e6e6;
+      --muted:#9aa0a6;
+      --acc:#6ee7b7;
+      --ring:#6ee7b780;
+      --border:#1f2330;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+      --radius:16px;
+      --max:1080px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f7f7fb; --card:#ffffff; --txt:#0b0c10; --muted:#556; --border:#e7e7ef; --shadow:0 10px 30px rgba(0,0,0,.05);
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--txt);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{max-width:var(--max);margin-inline:auto;padding:24px}
+    .glass{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .row{display:grid;gap:24px}
+    .grid{display:grid;gap:16px}
+    .hero{padding:28px 24px;position:relative;overflow:hidden}
+    .hero::after{
+      content:"";position:absolute;inset:auto -10% -40% -10%;height:60%;background:
+      radial-gradient(60% 60% at 50% 0%, var(--ring), transparent 60%);
+      filter:blur(40px);pointer-events:none
+    }
+    .tag{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid var(--border);
+      border-radius:999px;color:var(--muted);font-weight:600;font-size:.9rem;background:transparent}
+    .cta{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid var(--border);
+      transition:.25s;background:transparent}
+    .cta:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+    .btn{background:var(--txt);color:var(--bg);border:1px solid var(--txt)}
+    .btn:hover{filter:brightness(.9)}
+    .sec{padding:16px}
+    .sec h2{margin:0 0 8px;font-size:1.4rem}
+    .muted{color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{padding:8px 12px;border:1px solid var(--border);border-radius:12px;background:transparent}
+    .projects{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;padding:16px;display:grid;gap:8px}
+    .card h3{margin:0;font-size:1.1rem}
+    .card p{margin:0;color:var(--muted)}
+    .card .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+    @media (min-width:720px){
+      .hero{padding:40px}
+      .row{grid-template-columns:1.2fr .8fr}
+      .card{grid-column:span 6}
+    }
+    .nav{position:sticky;top:0;background:linear-gradient(to bottom, rgba(0,0,0,.35), transparent);
+      backdrop-filter:saturate(1.2) blur(10px);z-index:5}
+    .nav .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+    .nav .links{display:flex;gap:8px;flex-wrap:wrap}
+    .nav .links a{padding:8px 12px;border-radius:10px;border:1px solid var(--border)}
+    .switch{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+    .switch input{appearance:none;width:44px;height:26px;border-radius:20px;border:1px solid var(--border);position:relative;outline:none;background:var(--card)}
+    .switch input:before{content:"";position:absolute;width:20px;height:20px;border-radius:50%;background:var(--txt);top:2px;left:2px;transition:.2s}
+    .switch input:checked:before{left:22px}
+    footer{padding:32px 0;color:var(--muted);font-size:.95rem}
+    .pulse{animation:pulse 1.8s ease-in-out infinite}
+    @keyframes pulse{0%{transform:translateY(0)}50%{transform:translateY(-2px)}100%{transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="wrap bar">
+      <a href="#top" class="tag" aria-label="Ana sayfa">⚙️ <strong>Hamza Yeşilmen</strong></a>
+      <nav class="links">
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#projeler">Projeler</a>
+        <a href="#yetenekler">Yetenekler</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <label class="switch" title="Tema">
+        <input id="themeToggle" type="checkbox" aria-label="Koyu/Açık tema">
+        <span class="muted">Tema</span>
+      </label>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="top" class="wrap row">
+    <section class="glass hero">
+      <div class="grid" style="gap:14px">
+        <span class="tag">Mechatronic Engineer · R&amp;D</span>
+        <h1 style="margin:0;font-size:clamp(1.9rem,3vw,2.6rem)">Merhaba, ben <span style="text-decoration:underline wavy var(--acc);text-underline-offset:6px">Hamza</span> 👋</h1>
+        <p class="muted" style="max-width:60ch">
+          Gömülü sistemler, yapay zekâ, IoT ve yüksek performanslı yazılımlarla uçtan uca çözümler geliştiriyorum.
+          Donanım ile yazılımın kesişiminde ürün odaklı çalışmayı seviyorum.
+        </p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="cta btn" href="mailto:" onclick="window.location='mailto:hello@hamza.dev?subject=Merhaba%20Hamza'">İletişime Geç</a>
+          <a class="cta" href="https://github.com/HamzaYslmn" target="_blank" rel="noreferrer">GitHub Profilim ↗</a>
+          <a class="cta" href="https://www.linkedin.com/in/hamzayslmn" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIDE CARD -->
+    <aside class="glass sec grid" aria-label="Hızlı Bilgiler">
+      <h2>Öne Çıkanlar</h2>
+      <div class="grid">
+        <div class="chip">⚡ Gerçek zamanlı/embedded</div>
+        <div class="chip">🤖 Bilgisayarlı Görü &amp; ML</div>
+        <div class="chip">☁️ Bulut &amp; API</div>
+        <div class="chip">🧪 Ar-Ge kültürü</div>
+      </div>
+      <p class="muted">Yeni işbirliklerine açığım — ürünleştirme, danışmanlık veya freelance.</p>
+    </aside>
+  </main>
+
+  <!-- ABOUT -->
+  <section id="hakkimda" class="wrap glass sec">
+    <h2>Hakkımda</h2>
+    <p class="muted" style="max-width:75ch">
+      Mechatronic &amp; R&amp;D Engineer olarak gömülü C/C++, Python ve modern web teknolojileriyle
+      prototipten üretime uzanan projeler geliştiriyorum. Donanım sürücüleri, sensör füzyonu,
+      kenar-yapay zekâ ve bulut altyapılarıyla çalışıyorum.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projeler" class="wrap glass sec">
+    <h2>Seçili Projeler</h2>
+    <div class="projects">
+      <!-- g-helper-TR -->
+      <article class="card">
+        <h3>g-helper-TR <span class="tag pulse">Topluluk</span></h3>
+        <p>Asus Zephyrus/Strix/TUF dizüstüler için açık kaynak kontrol yardımcı programı (GPU &amp; performans modları vb.).</p>
+        <div class="meta">
+          <span>🧩 C#</span>
+          <a href="https://github.com/HamzaYslmn/g-helper-TR" target="_blank" rel="noreferrer">Kaynak Kodu ↗</a>
+        </div>
+      </article>
+      <!-- LinkleV3.0.1 -->
+      <article class="card">
+        <h3>LinkleV3.0.1</h3>
+        <p>Yuzu için araçlar/iyileştirmeler — oyun modlama ekosistemi için katkılar.</p>
+        <div class="meta">
+          <span>🧩 —</span>
+          <a href="https://github.com/HamzaYslmn/LinkleV3.0.1" target="_blank" rel="noreferrer">Kaynak Kodu ↗</a>
+        </div>
+      </article>
+      <!-- novatorem -->
+      <article class="card">
+        <h3>novatorem</h3>
+        <p>Spotify ile gerçek zamanlı profil Readme bileşeni (Jinja tabanlı).</p>
+        <div class="meta">
+          <span>🧩 Jinja</span>
+          <a href="https://github.com/HamzaYslmn/novatorem" target="_blank" rel="noreferrer">Kaynak Kodu ↗</a>
+        </div>
+      </article>
+      <!-- github-readme-stats -->
+      <article class="card">
+        <h3>github-readme-stats</h3>
+        <p>GitHub istatistiklerini dinamik olarak üreten bileşen üzerinde özelleştirmeler.</p>
+        <div class="meta">
+          <span>🧩 JavaScript</span>
+          <a href="https://github.com/HamzaYslmn/github-readme-stats" target="_blank" rel="noreferrer">Kaynak Kodu ↗</a>
+        </div>
+      </article>
+    </div>
+    <p class="muted" style="margin-top:8px">Daha fazlası için <a href="https://github.com/HamzaYslmn?tab=repositories" target="_blank" rel="noreferrer">tüm repolarım</a>.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="yetenekler" class="wrap glass sec">
+    <h2>Yetenekler</h2>
+    <div class="skills">
+      <span class="chip">C / C++ / Embedded C</span>
+      <span class="chip">Python</span>
+      <span class="chip">FastAPI</span>
+      <span class="chip">Docker</span>
+      <span class="chip">Raspberry Pi</span>
+      <span class="chip">Arduino</span>
+      <span class="chip">Bash / Linux</span>
+      <span class="chip">Socket.IO</span>
+      <span class="chip">Google Cloud / Firebase</span>
+      <span class="chip">MongoDB / Redis</span>
+      <span class="chip">OpenCV / NumPy</span>
+      <span class="chip">TensorFlow / PyTorch</span>
+      <span class="chip">HTML / CSS / JS</span>
+      <span class="chip">Jupyter</span>
+      <span class="chip">Rust (temel)</span>
+      <span class="chip">IFTTT</span>
+      <span class="chip">VS Code</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="iletisim" class="wrap glass sec">
+    <h2>İletişim</h2>
+    <div class="grid">
+      <p class="muted">Proje, danışmanlık ya da konuşma için iletişime geç.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="cta btn" href="mailto:hello@hamza.dev">E-posta Gönder</a>
+        <a class="cta" href="https://github.com/HamzaYslmn" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a class="cta" href="https://www.linkedin.com/in/hamzayslmn" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    <div class="glass sec">
+      <p>© <span id="yil"></span> Hamza Yeşilmen</p>
+      <p class="muted">Bu sayfa hafif, hızlı ve tamamen statiktir. Koyu/Açık temayı sağ üstten değiştirebilirsin.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Tema toggle (system preference uyumlu)
+    const key="theme-preference";
+    const toggle=document.getElementById('themeToggle');
+    const apply=(m)=>{document.documentElement.dataset.theme=m; if(m==="light"){document.documentElement.style.setProperty('--bg','#f7f7fb');} else {document.documentElement.style.setProperty('--bg','#0b0c10');}};
+    const current=localStorage.getItem(key);
+    const prefersLight=window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+    const theme=current || (prefersLight?'light':'dark');
+    if(theme==='light') toggle.checked=true;
+    apply(theme);
+    toggle.addEventListener('change',e=>{const m=e.target.checked?'light':'dark';localStorage.setItem(key,m);apply(m);});
+
+    // Yıl
+    document.getElementById('yil').textContent = new Date().getFullYear();
+
+    // Yumuşak kaydırma
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href').slice(1);
+        const el=document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
